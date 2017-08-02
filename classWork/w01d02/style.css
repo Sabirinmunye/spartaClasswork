@@ -1,0 +1,71 @@
+* {
+	border:2px black;
+}
+h1{
+	color: aquamarine;
+}
+
+p {
+	font-size: 50px;
+}
+
+.special {
+	text-decoration: underline;
+	color: blue;
+}
+
+#name {
+	font-weight: bold;
+}
+
+#boring {
+	text text-decoration: none;
+}
+
+li.special {
+	color:pink;
+}
+
+ul > li {
+	font-size: 50px;
+}
+
+ul li {
+	font size:0.5rem;
+}
+
+section:nth-child(2) {
+	background-color: gray;
+
+}
+
+
+/* Layout */
+ 
+main {
+	border: 2px solid blue;
+}
+header {
+	border: 2px solid red;
+}
+
+footer {
+	border: 2px solid yellow;
+}
+
+section {
+	padding: 20px;
+	margin:20px;
+	width: 400px;
+	height: 250px;
+	display: inline-block;
+	float: left;
+}
+
+aside {
+	background-color: green;
+	width: 200px;
+	height: 500px;
+	display: inline-block;
+
+}
