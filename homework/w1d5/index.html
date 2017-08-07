@@ -5,7 +5,7 @@
 </head>
 
 <body>
-<script type="text/javascript">
+<script src="flow.js">
 
 var userChoice = '';
 var computerChoice = '';
@@ -49,7 +49,7 @@ var compare = function(choice1, choice2) {
 
 // loop over the game
 
-while(true) {
+while(userScore<3 && computerScore<3){
   // ask for the user choice on each loop
   userChoice = prompt('What do you choose?');
 
@@ -67,17 +67,17 @@ while(true) {
   // run the function to compare the choices.
   compare(userChoice, computerChoice);
 
-  // end the loop if the computer gets a score of 2
-  if(computerScore >= 2) {
-    alert('Computer wins');
-    break;
-  }
+  // // end the loop if the computer gets a score of 2
+  // if(computerScore >= 2) {
+  //   alert('Computer wins');
+  //   break;
+  // }
 
-  // end the loop if the user gets a score of 2
-  if(userScore >= 2) {
-    alert('User wins');
-    break;
-  }
+  // // end the loop if the user gets a score of 2
+  // if(userScore >= 2) {
+  //   alert('User wins');
+  //   break;
+  // }
 }
 
 
