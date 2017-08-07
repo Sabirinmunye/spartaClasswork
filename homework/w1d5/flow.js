@@ -1,0 +1,1 @@
+var userChoice = prompt ("Please Choose Rock, Paper or scissors")
