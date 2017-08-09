@@ -17,6 +17,11 @@ section {
     display: inline-block;
     width: 500px;
 
+
+}
+h1	{
+	color: navy;
+	font-size: 30px;
 }
 
 aside {

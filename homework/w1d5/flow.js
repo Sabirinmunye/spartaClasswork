@@ -58,25 +58,12 @@ while(userScore<3 && computerScore<3){
   
   // run the function to compare the choices.
   compare(userChoice, computerChoice);
-
-
   if (userScore == 3 ){
     alert("user wins");
   }else if (computerScore == 3) {
     alert("computer wins");
   }
-  // // end the loop if the computer gets a score of 2
-  // if(computerScore >= 2) {
-  //   alert('Computer wins');
-  //   break;
-  // }
-
-  // // end the loop if the user gets a score of 2
-  // if(userScore >= 2) {
-  //   alert('User wins');
-  //   break;
-  // }
+  
 }
 
 
-// </script>
