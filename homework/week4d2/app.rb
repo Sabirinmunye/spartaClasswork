@@ -20,3 +20,11 @@ end
 get '/blog/7/edit' do
 	'go make me my form so i can edit my pic my g'
 end
+
+put '/blog/7' do 
+	"update my pic ggggg"
+end
+
+delete '/blog' do 
+	'delete the bloody thing'
+end
