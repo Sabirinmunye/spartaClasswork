@@ -1,0 +1,8 @@
+<h1><%= @blogs[:title] %></h1>
+<p><%= @blogs[:content] %></p>
+<a href="/<%= @blogs[:id] %>/edit">edit page</a>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/<%= @blogs[:url] %>" frameborder="0" allowfullscreen></iframe>
+	<form action="/<%= @blogs[:id] %>" method="POST">
+	<input type="hidden" name="_method" value="DELETE">
+	<input type="submit" value="delete">
+</form>
