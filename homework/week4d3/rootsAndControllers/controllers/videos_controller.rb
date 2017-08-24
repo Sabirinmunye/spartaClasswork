@@ -4,31 +4,31 @@ $videos = [{
 			id: 0,
 			title: "smokey eye",
 			content: "first video",
-			url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/dF_iBT4KgvM" frameborder="0" allowfullscreen></iframe>'
+			url:  "dF_iBT4KgvM"  
 		},
 		{
 			id:  1,
 			title: "glitter eye",
 			content: "this is the second video",
-			url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/w3p3dBhQYko" frameborder="0" allowfullscreen></iframe>'
+			url:  "w3p3dBhQYko" 
 		},
 		{
 			id: 2,
 			title: "cut crease",
 			content: "this is the third video",
-			url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/lYE9PRz1lVg" frameborder="0" allowfullscreen></iframe>'
+			url: "lYE9PRz1lVg" 
 		},
 		{
 			id: 3,
 			title: "green smokey",
 			content: "this is the fourth video",
-			url:'<iframe width="560" height="315" src="https://www.youtube.com/embed/U47bhjRPxEU" frameborder="0" allowfullscreen></iframe>'
+			url: "U47bhjRPxEU" 
 		},
 		{
 			id: 4 ,
 			title: "highlight&contour",
 			content: "this is the fifth video",
-			url:'<iframe width="560" height="315" src="https://www.youtube.com/embed/svbc4IIlUt0" frameborder="0" allowfullscreen></iframe>'
+			url:"svbc4IIlUt0" 
 
 		}]
 	#sets root as the parent-directory of the current file
@@ -48,7 +48,8 @@ end
 	end
 
 	get '/new' do
-		
+
+		erb :'videos/new'
 		
 	end
 
@@ -63,6 +64,15 @@ end
 	end
 	
 	post '/' do
+		id= $videos.length
+		new_video = {
+			id: id,
+			title: params[:title],
+			content: params[:content],
+			url: params[:url]
+		}
+		$videos.push new_video
+		redirect "/"
 
 	end
 

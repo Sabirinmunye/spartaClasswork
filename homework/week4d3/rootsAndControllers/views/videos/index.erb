@@ -2,8 +2,8 @@
 <center>
 	<div>
 		<h3> <a href="/<%= video[:id] %>"><%= video[:title] %> </a></h3>
-		<p> <a href="/<%= video[:id] %>"><%=video[:content]%> ></a> </p>
-		<%= video[:url] %>
+		<p> <a href="/<%= video[:id] %>"><%=video[:content]%> ></a> </p>	
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/<%= video[:url] %>" frameborder="0" allowfullscreen></iframe>
 	</div>
 </center>
 <% end %>
