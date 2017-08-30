@@ -1,0 +1,9 @@
+<center>
+<% @blogs.each do |blog| %>
+	<div>
+		<h3> <a href="/<%= blog[:id] %>"><%= blog[:title] %> </a></h3>
+		<p> <a href="/<%= blog[:id] %>"<%=blog[:content]%> </a> </p>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/<%= blog[:url] %>" frameborder="0" allowfullscreen></iframe>
+	</div>
+<% end %>
+</center>
